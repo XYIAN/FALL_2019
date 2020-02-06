@@ -1,0 +1,20 @@
+body { background-color : black ; color:green ; justify-content:center;}
+/*background color*/
+header, main, nav, footer { text-align: center; }
+/*align elements*/
+main
+{
+    display:flex;
+    justify-content: center;
+}
+a:hover
+#pic
+{
+    justify-content:center;
+    text-align:center;
+    color:yellow ;
+}
+.text
+{
+    color:white;
+}

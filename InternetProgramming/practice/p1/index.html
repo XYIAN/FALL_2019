@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS PRACTICE</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <img id="k" src="img/now_you_see_me.png">
+        <br>
+        <h2 class"tester" id="kk">Now you see me</h2>
+        <button id="ky" onclick="f()"> BUTTON </button>
+        <hr>
+        
+        <button id="displayNumber">num</button>
+        
+        <h2 id="num"> </h2>
+        
+        <script>
+        
+            $("#tester").html("testing jquery");
+            $("ky").on("click", f);
+        
+            document.getElementById("ky").addEventListener("click", f);
+            document.getElementById("displayNumber").addEventListener("click", k);
+            
+            function k()
+            {
+                //document.getElementById("num").innerHtml= Math.floor(Math.random() * 51);
+                
+                let randomNumber = Math.floor(Math.random() * 51);
+                document.getElementById("num").innerHTML=`Your Lucky Number is: ${randomNumber}`;
+                
+                
+                
+            }
+            
+            function f()
+            {
+            //console.log("it works!");
+            //alert("workinggggg");
+            document.getElementById("k").src="img/now_you_dont.png";
+            document.getElementById("kk").innerHTML="Now you dont!";
+            document.getElementById("ky").style.display = "none";//hide button
+            }
+            
+            
+            
+        
+        </script>
+    </body>
+</html>
